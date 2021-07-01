@@ -1,0 +1,132 @@
+body { 
+  margin: 0; 
+  padding: 0; 
+  font-family: 'Ubuntu Mono', monospace;
+}
+
+nav { 
+  width: 100%;
+  background: #f7d400ff; 
+  float: left; 
+  padding: 10px 0px; 
+}
+
+nav ul li { 
+  list-style: none; display: inline; 
+}
+
+nav ul li a { 
+  padding: 10px; 
+  color: #171717; 
+  font: 1.3em Tahoma;
+  font-size: 110%;
+  font-weight: bolder;
+}
+
+.container{
+
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 1030;
+    margin-top: 20%;
+
+} 
+  header,footer{
+  background color: #f7d400ff;
+  padding: 1%;
+  position: fixed;
+}
+
+#menu, .menu {	
+  display: none; 
+}
+
+.fixo{
+
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+} 
+
+.fixo a{
+  font-size: 85%;
+}
+
+.menu-opcoes{
+ 
+    text-align: center;
+}
+
+
+
+@media screen and (max-width: 480px) {
+
+	nav { display: none; }
+	#menu:checked ~ nav {
+		display: block;
+	}
+
+	.menu { 
+    display: block; background: #171717; 
+    padding: 10px; float: right; 
+  }
+
+  .container{
+    margin-top: 20%;
+    font-size: 100%;
+  }
+
+	nav ul {
+   margin: 0; padding: 0; 
+  }
+
+	nav ul li { 
+    display: block; 
+    padding: 10px 0px;   
+  }
+
+	nav ul li a { 
+    width: 100%; 
+    float: left; text-align: center; }
+
+}
+ header,footer{
+    background-color: #171717;
+    padding: 1%;
+    color: #f7d400ff;
+ }
+
+ h1{ 
+    font-family: ;
+    font-size: 220%;
+    font-weight: bolder;
+    color:#f6f6f6 ;
+    text-align: ;
+    width: 100%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+ }
+ .img{
+    width: 80%;
+    height: 60%;
+  }
+}
+
+.ajustes li:hover{
+      transform: scale(1.5);
+      transition: 0.2s;
+} 
+
+.img{
+  width: 60%;
+  height: 40%;
+  margin-right: 30%;
+  margin-left: 20%;
+  text-align: center;
+}
+
+b{
+  color: green;
+  font-weight: bolder;
+}
